@@ -1,0 +1,61 @@
+const welcome= document.getElementById("welcome_msg");
+welcome.textContent="hey there"
+welcome.style.color= "blue";
+welcome.style.background ="yellow";
+welcome.style.textAlign= "center";
+console.log(welcome);
+
+const fruits = document.getElementsByClassName("fruits");
+Array.from(fruits).forEach(fruits=> {
+    fruits.style.backgroundColor ="yellow";
+});
+
+const playertags =document.getElementsByTagName("h4");
+const playernames= document.getElementsByTagName("li");
+
+for(let playertag of playertags){
+    playertag.style.backgroundColor = "yellow"; 
+}
+
+const info = document.querySelector(".fruits")
+info.style.backgroundColor= "yellow";
+console.log(info);
+
+const game= document.querySelectorAll(".fruits")
+game[1].style.backgroundColor= "yellow";
+console.log(game);
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <h1 id="welcome_msg"> Welcome </h1>
+
+ <div class="fruits">Apple</div>
+ <div class="fruits">orange</div>
+ <div class="fruits">banana</div>
+
+ <h4>Best players</h4>
+ <ul>
+    <li>Pant</li>
+    <li>KL</li>
+    <li>gill</li>
+ </ul>
+
+<h4> good players</h4>
+<ul>
+    <li>siraj</li>
+    <li>jaiswal</li>
+    <li>nair</li>
+</ul>
+
+ <script src="index.js"></script>
+</body>
+</html>
